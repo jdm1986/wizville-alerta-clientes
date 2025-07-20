@@ -1,6 +1,29 @@
-echo __pycache__/ > .gitignore
-echo *.pyc >> .gitignore
-echo *.db >> .gitignore
-echo ultima_ruta.json >> .gitignore
-echo *.xlsx >> .gitignore
-echo *.exe >> .gitignore
+# Carpetas y archivos generados por Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Bases de datos y archivos locales
+*.db
+ultima_ruta.json
+
+# Archivos temporales de Excel
+*.xlsx
+*.xlsm
+~$*.xlsx
+
+# Ejecutables
+*.exe
+
+# Entornos virtuales
+.venv/
+env/
+venv/
+
+# Configuración de IntelliJ IDEA / PyCharm
+.idea/
+*.iml
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
